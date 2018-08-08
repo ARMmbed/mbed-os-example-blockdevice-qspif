@@ -19,14 +19,14 @@
              "QSPI_CS":   "PG_6",
              "QSPI_FREQ": "80000000"
         },
-       "DISCO_L475VG": {
+       "DISCO_L475VG_IOT01A": {
              "QSPI_IO0": "PE_12",
              "QSPI_IO1": "PE_13",
              "QSPI_IO2": "PE_14",
              "QSPI_IO3": "PE_15",
              "QSPI_CLK":  "PE_10",
              "QSPI_CS":   "PE_11",
-             "QSPI_FREQ": "80000000"
+             "QSPI_FREQ": "8000000"
         },
        "DISCO_L476VG": {
              "QSPI_IO0": "PE_12",
