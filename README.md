@@ -1,7 +1,7 @@
 ## Getting Started With The mbed-os Example for the QSPI Flash Block Device
 
 This is the mbed-os example for the QSPIFBlockDevice driver.
-See the [qspif-blockDevice](https://github.com/ARMmbed/qspif-blockDevice) repository for more information.
+See the [qspif-blockdevice](https://github.com/ARMmbed/qspif-blockdevice) repository for more information.
 
 This guide outlines the steps to get a QSPI NOR SFDP flash device working on an mbed OS platform.
 
