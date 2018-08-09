@@ -18,18 +18,18 @@ This document uses DISCO_L476VG board as an example. Simply change the relevant 
 From the command-line, import the example:
 
 ```
-mbed import mbed-os-example-qspif-blockDevice
+mbed import mbed-os-example-blockdevice-qspif
 ```
 
 You should see:
 
-	[mbed] Importing program "mbed-os-example-qspif-blockDevice" from "https://github.com/ARMmbed/mbed-os-example-qspif-blockDevice" at latest revision in the current branch
+	[mbed] Importing program "mbed-os-example-blockdevice-qspif" from "https://github.com/ARMmbed/mbed-os-example-blockdevice-qspif" at latest revision in the current branch
 	[mbed] Adding library "mbed-os" from "https://github.com/ARMmbed/mbed-os" at rev #revision
 
 Move into the newly created directory:
 
 ```
-cd mbed-os-example-qspif-blockDevice
+cd mbed-os-example-blockdevice-qspif
 ```
 
 If the mbed-os library was not automatically added (see trace above), do the following to import mbed-os:
@@ -67,12 +67,12 @@ Your PC may take a few minutes to compile your code. At the end, you see the fol
 	Total Static RAM memory (data + bss): 10704 bytes
 	Total Flash memory (text + data): 63246 bytes
 
-	Image: ./BUILD/DISCO_L476VG/GCC_ARM/mbed-os-example-qspif-blockDevice.bin
+	Image: ./BUILD/DISCO_L476VG/GCC_ARM/mbed-os-example-blockdevice-qspif.bin
 
 
 ## <a name="run-the-example-binary-on-the-DISCO_L476VG"></a> Run the Example Binary on the DISCO_L476VG
 
-Copy the binary from `<root_dir>/mbed-os-example-qspif-blockDevice/BUILD/DISCO_L476VG/GCC_ARM/mbed-os-example-qspif-blockDevice.bin` to the DISCO_L476VG:
+Copy the binary from `<root_dir>/mbed-os-example-blockdevice-qspif/BUILD/DISCO_L476VG/GCC_ARM/mbed-os-example-blockdevice-qspif.bin` to the DISCO_L476VG:
 
 1. Connect your mbed device to the computer over USB.
 1. Copy the binary file to the mbed device.
