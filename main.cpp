@@ -15,8 +15,9 @@
  */
 
 // QSPI SFDP Flash - Block Device example
-#include "mbed.h"
 #include "QSPIFBlockDevice.h"
+#include <stdio.h>
+using namespace mbed;
 
 QSPIFBlockDevice block_device(MBED_CONF_QSPIF_QSPI_IO0, MBED_CONF_QSPIF_QSPI_IO1, MBED_CONF_QSPIF_QSPI_IO2, MBED_CONF_QSPIF_QSPI_IO3,
 		MBED_CONF_QSPIF_QSPI_CLK, MBED_CONF_QSPIF_QSPI_CS, QSPIF_POLARITY_MODE_0, MBED_CONF_QSPIF_QSPI_FREQ);
