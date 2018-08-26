@@ -18,11 +18,11 @@
 #include "mbed.h"
 #include "QSPIFBlockDevice.h"
 
-QSPIFBlockDevice block_device(MBED_CONF_QSPIF_QSPI_IO0, MBED_CONF_QSPIF_QSPI_IO1, MBED_CONF_QSPIF_QSPI_IO2, MBED_CONF_QSPIF_QSPI_IO3,
-		MBED_CONF_QSPIF_QSPI_CLK, MBED_CONF_QSPIF_QSPI_CS, QSPIF_POLARITY_MODE_0, MBED_CONF_QSPIF_QSPI_FREQ);
+QSPIFBlockDevice block_device(QSPI_FLASH1_IO0, QSPI_FLASH1_IO1, QSPI_FLASH1_IO2, QSPI_FLASH1_IO3,
+                              QSPI_FLASH1_SCK, QSPI_FLASH1_CSN, QSPIF_POLARITY_MODE_0, MBED_CONF_QSPIF_QSPI_FREQ);
 
-
-int main() {
+int main()
+{
     printf("QSPI SFDP Flash Block Device example\n");
 
     // Initialize the SPI flash device and print the memory layout
@@ -36,7 +36,7 @@ int main() {
     printf("QSPIF BD erase size (at address 0): %llu\n", sector_size_at_address_0);
 
     // Write "Hello World!" to the first block
-    char *buffer = (char*) malloc(sector_size_at_address_0);
+    char *buffer = (char *) malloc(sector_size_at_address_0);
     sprintf(buffer, "Hello World!\n");
     block_device.erase(0, sector_size_at_address_0);
     block_device.program(buffer, 0, sector_size_at_address_0);
