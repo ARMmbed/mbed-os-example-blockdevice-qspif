@@ -1,3 +1,8 @@
+# Deprecation note
+
+**This repository has been deprecated and is no longer maintained.**
+
+
 ## Getting Started With The mbed-os Example for the QSPI Flash Block Device
 
 This is the mbed-os example for the QSPIFBlockDevice driver.
